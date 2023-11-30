@@ -82,3 +82,38 @@ body {
 .footer {
   text-align: center;
 }
+
+/* Mobile Version */
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-rows: 30px 1fr 30px;
+  }
+  .header {
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: 10% auto;
+    align-items: center;
+  }
+  .menu {
+    font-size: small;
+  }
+  .content {
+    margin: 50px 10px 0px 10px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .item-content {
+    margin: 0px 10px 0px 10px;
+    font-size: small;
+  }
+
+  .item-title {
+    font-size: large;
+  }
+}
